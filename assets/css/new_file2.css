@@ -1,0 +1,58 @@
+#webcam-container {
+  margin: 10px;
+  text-align: center;
+}
+
+.container_1 {
+	margin: 10px auto;
+	width: 320px;
+  height: 270px;
+  border: 10px #333 solid;
+  background-color: grey;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+  
+#demo1 {
+  text-align: center;
+  margin: 5px;
+}
+  
+.iframe1 {
+  margin-top: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+  
+.teachable-model {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+}
+
+.demo15{
+  padding-bottom: 15px;
+}
+.demo_23{
+  text-align: center;
+}
+
+#container {
+	margin: 10px auto;
+	width: 320px;
+	height: 270px;
+  border: 10px #333 solid;
+  display: flex;
+}
+#videoElement {
+	width:300px;
+	height: 250px;
+  background-color: #666;
+  display: flex;
+  transform: scaleX(-1);
+}

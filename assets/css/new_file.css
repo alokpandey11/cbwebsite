@@ -1,0 +1,76 @@
+#webcam-container {
+  margin: 10px;
+  text-align: center;
+}
+
+body{
+  color: #fde8e8;
+}
+
+  
+#demo1 {
+  text-align: center;
+  margin: 5px;
+}
+  
+.iframe1 {
+  margin-top: 40px;
+  overflow: hidden;
+  text-align: center;
+}
+}
+
+.box-shadow-ful {
+  padding: 3rem 1.25rem;
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 3rem;
+  z-index: 2;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+  
+.teachable-model {
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: center;
+}
+
+.demo15{
+  padding-bottom: 15px;
+}
+.demo_23{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#container {
+	margin: 10px auto;
+	width: 320px;
+	height: 270px;
+  border: 10px #a7b498 solid;
+  display: flex;
+}
+#videoElement {
+	width:300px;
+	height: 250px;
+  background-color: #666;
+  display: flex;
+  transform: scaleX(-1);
+}
+
+.post-box,
+.form-comments {
+  padding: 2rem;
+  background-color: rgb(48, 46, 46);
+  margin-bottom: 3rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #43ddaa;
+}
