@@ -14,19 +14,9 @@ body{
 }
   
 .iframe1 {
-  margin-top: 40px;
+  margin-top: 10px;
   overflow: hidden;
   text-align: center;
-}
-}
-
-.box-shadow-ful {
-  padding: 3rem 1.25rem;
-  position: relative;
-  background-color: #fff;
-  margin-bottom: 3rem;
-  z-index: 2;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
   
 .teachable-model {
@@ -41,24 +31,15 @@ body{
 }
 .demo_23{
   text-align: center;
-  padding-bottom: 30px;
 }
 
-#container {
+#webcam-container {
 	margin: 10px auto;
 	width: 320px;
 	height: 270px;
   border: 10px #a7b498 solid;
-  display: flex;
+  background-color: #804ea7;
 }
-#videoElement {
-	width:300px;
-	height: 250px;
-  background-color: #666;
-  display: flex;
-  transform: scaleX(-1);
-}
-
 .post-box,
 .form-comments {
   padding: 2rem;
