@@ -1,23 +1,126 @@
-/*
-  Theme Name: DevFolio
-  Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*======================================
-//--//-->   STYLES GENERALES
-======================================*/
-
 body {
   background-color: #f5f5f5;
   color: #4e4e4e;
 }
+
+main {
+  max-width: 95vw;
+  margin: auto;
+  box-shadow: 30px 30px 100px rgba(0, 0, 0, 0.3), -30px 30px 100px rgba(0, 0, 0, 0.1);
+}
+
+.hl1 {
+  color: #999;
+}
+
+.hl2 {
+  color: #000000;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.hl3 {
+  color: #0078FF;
+}
+
+.hl4 {
+  color: #333333;
+}
+
+.image2 {
+  width: 100%;
+  height: auto;
+}
+
+#fixImg {
+  padding-top: 2rem;
+}
+
+.teamN {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.btn:hover {
+  color: #fff;
+  opacity: 0.5;
+}
+
+.sliderBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.landing {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #0B121B;
+  color: #999999;
+  /* color: #3f3f3f; */
+
+}
+
+.landing-text {
+  font-size: 6rem;
+  margin-left: 2rem;
+}
+
+.highlight {
+  /* color: #5c82e3; */
+  color: #35B5D2;
+}
+
+#bgImg {
+  width: 50%;
+  height: auto;
+}
+
+.containerN {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerN:hover .image {
+  opacity: 0.3;
+}
+
+.containerN:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 .about {
   text-align: center;
   align-content: center;
   padding-bottom: 2rem;
 }
+
 .social ul {
   font-size: 30px;
 }
@@ -97,7 +200,6 @@ a:hover {
 
 .bg-image {
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   background-position: center center;
 }
@@ -276,6 +378,7 @@ a:hover {
   box-shadow: 0 0 0 10px #0078ff;
   display: block;
 }
+
 .io-circle {
   height: 200px;
   width: 200px;
@@ -333,7 +436,7 @@ a:hover {
   height: 42px;
   background-color: #0078ff;
   opacity: 0.7;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   text-align: center;
   color: #fff;
@@ -471,12 +574,12 @@ a:hover {
   width: 35px;
 }
 
-.navbar-b.navbar-trans .show > .nav-link:before,
-.navbar-b.navbar-trans .active > .nav-link:before,
+.navbar-b.navbar-trans .show>.nav-link:before,
+.navbar-b.navbar-trans .active>.nav-link:before,
 .navbar-b.navbar-trans .nav-link.show:before,
 .navbar-b.navbar-trans .nav-link.active:before,
-.navbar-b.navbar-reduce .show > .nav-link:before,
-.navbar-b.navbar-reduce .active > .nav-link:before,
+.navbar-b.navbar-reduce .show>.nav-link:before,
+.navbar-b.navbar-reduce .active>.nav-link:before,
 .navbar-b.navbar-reduce .nav-link.show:before,
 .navbar-b.navbar-reduce .nav-link.active:before {
   width: 35px;
@@ -490,8 +593,8 @@ a:hover {
   color: #fff;
 }
 
-.navbar-b.navbar-trans .show > .nav-link,
-.navbar-b.navbar-trans .active > .nav-link,
+.navbar-b.navbar-trans .show>.nav-link,
+.navbar-b.navbar-trans .active>.nav-link,
 .navbar-b.navbar-trans .nav-link.show,
 .navbar-b.navbar-trans .nav-link.active {
   color: #fff;
@@ -516,8 +619,8 @@ a:hover {
   color: #0078ff;
 }
 
-.navbar-b.navbar-reduce .show > .nav-link,
-.navbar-b.navbar-reduce .active > .nav-link,
+.navbar-b.navbar-reduce .show>.nav-link,
+.navbar-b.navbar-reduce .active>.nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
   color: #0078ff;
@@ -533,7 +636,7 @@ a:hover {
 
 .navbar-b .navbar-brand {
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 
@@ -733,6 +836,10 @@ a:hover {
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-box:hover .ico-circle {
@@ -938,7 +1045,7 @@ a:hover {
 .card-blog .post-date {
   color: #4e4e4e;
   display: inline-block;
-  float: right;
+  /* float: right; */
 }
 
 /*======================================
@@ -1282,9 +1389,20 @@ footer .credits a {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1026px) {
   .bg-image {
     background-attachment: scroll;
+  }
+
+  .landing {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quote {
+    font-size: 2rem;
   }
 }
 
@@ -1292,7 +1410,19 @@ footer .credits a {
   .back-to-top {
     bottom: 15px;
   }
+
+  .landing-text {
+    font-size: 5rem;
+  }
 }
+
+@media (max-width: 500px) {
+  .landing-text {
+    font-size: 3rem;
+  }
+}
+
+
 a.projectAG img.img-fluid {
   height: 200px;
   width: 100%;
