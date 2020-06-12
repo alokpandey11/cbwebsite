@@ -2,6 +2,47 @@ body {
   background-color: #f5f5f5;
   color: #4e4e4e;
 }
+#chat-bot{
+  position: fixed;
+  display: inline-block;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  
+}
+#chat-bot2{
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.button-new {
+  background-color: #fff; 
+  border: 10px solid blue;
+  border-radius: 4rem;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  
+  margin-bottom: 0.1rem;
+  cursor: pointer;
+}
+
+.button-new2 {
+  background-color: #fff; 
+  border: 2px solid blue;
+  border-radius: 2rem;
+  
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 0.1rem;
+  cursor: pointer;
+}
 
 main {
   max-width: 95vw;
@@ -461,7 +502,7 @@ a:hover {
   line-height: 1;
   font-size: 16px;
   border-radius: 50%;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   transition: background 0.5s;
   z-index: 11;

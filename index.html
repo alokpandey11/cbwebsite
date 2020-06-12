@@ -757,6 +757,28 @@
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
+  <div>
+    <div class="chat-cont">
+    <button class="button-new" id="chat-bot" onclick="newchatbotfunc()"><h2>💬</h2></button>
+    </div>
+    <div id="chat-bot2"><iframe  allow="microphone;" width="350" height="430" src="https://console.dialogflow.com/api-client/demo/embedded/aroma_codebugged">
+    </iframe>
+    <button class="button-new2" onclick="newchatbotfunc()">x</button>
+    </div>
+    <script>
+      function newchatbotfunc() {
+        var x = document.getElementById("chat-bot2");
+        var y = document.getElementById("chat-bot");
+        if (x.style.display === "none" && y.style.display === "inline-block") {
+          x.style.display = "inline-block";
+          y.style.display = "none";
+        } else {
+          x.style.display = "none";
+          y.style.display = "inline-block";
+        }
+      }
+    </script>
+  </div>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>
